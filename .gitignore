@@ -1,0 +1,7 @@
+/node_modules/
+/public/
+/.git/
+/resources/css/
+/**/_backstage
+/**/Thumbs.db
+/**/*.DS_Store

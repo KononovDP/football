@@ -1,0 +1,137 @@
+*
+	outline: none
+	box-sizing: border-box
+
+body
+	font: 16px/1.44 'Conv_Lato-Regular'
+	color: #1f1f1f
+
+h1
+	margin: 35px 0
+
+h2
+	margin: 20px 0
+
+p
+	margin: 15px 0
+
+a
+	text-decoration: none
+
+.hidden
+	display: none!important
+
+.clearfix
+	&:after, &:before
+		display: table
+		content: ' '
+	&:after
+		clear: both
+
+.float-r
+	float: right
+
+.float-l
+	float: left
+
+.text-left
+	text-align: left
+
+.text-center
+	text-align: center
+
+.text-right 
+	text-align: right
+
+.text-upper
+	text-transform: uppercase
+
+.text-overflow
+	display: inline-block
+	width: 100%
+	white-space: nowrap
+	overflow: hidden
+	text-overflow: ellipsis
+
+/*for-img*/
+.for-img
+	text-align: center
+	overflow: hidden
+img
+	max-width: 100%
+	max-height: 100%
+	height: auto
+
+/*full-img*/
+.full-img 
+	position: relative
+	overflow: hidden
+	&:before 
+		display: block
+		content: ""
+	.cover-img
+		position: absolute
+		top: 0
+		left: 0
+		min-width: 100%
+		min-height: 100%
+		+object-fit(cover)
+
+/*card-img*/
+.card-img
+	position: relative
+	display: block
+	overflow: hidden
+	&:before
+		display: block
+		content: ''
+	img
+		position: absolute
+		left: 50%
+		top: 50%
+		transform: translate(-50%, -50%)
+		max-width: 100%
+		max-height: 100%
+		height: auto
+
+/*select*/
+.select
+	position: relative
+	width: 100%
+
+.select-list
+	display: none
+	position: absolute
+	top: 100%
+	left: 0
+	z-index: 30
+
+.select-option
+	cursor: pointer
+
+/*tabs ob JS*/
+.tab-toggle
+	display: inline-block
+	cursor: pointer
+
+.tab-content
+	display: none
+
+.tab-content_active
+	display: block
+
+.wrapper
+	display: flex
+	flex-direction: column
+	width: 100%
+	min-height: 100vh
+	background: #fff
+
+.container
+	width: 100%
+	max-width: 1500px
+	margin: 0 auto
+	padding: 0 20px
+
+.content-wrapper
+	flex: 1 1 auto

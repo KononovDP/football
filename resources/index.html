@@ -2,11 +2,13 @@
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-	<title>Главная</title>
+	<title>Home page</title>
 	<meta name="description" content="">
 	<meta name="keywords" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:700&amp;subset=cyrillic" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/lib.min.css">
 	<link rel="stylesheet" href="css/main.css">
@@ -15,27 +17,404 @@
 <body>
 
 	<div class="wrapper">
+
 		<!-- HEADER -->
 		<header class="header">
-			<div class="container">
-				<div class="header-inner">Привет!</div>
+			<div class="header-line">
+				<div class="container">
+					<div class="header-line-inner">
+						<div class="header-social social">
+							<a href="#" class="social-link for-img">
+								<img class="image" src="img/social/instagram.png" alt="">
+								<img class="image hover-state" src="img/social/instagram-hover.png" alt="">
+							</a>
+							<a href="#" class="social-link for-img">
+								<img class="image" src="img/social/youtube.png" alt="">
+								<img class="image hover-state" src="img/social/youtube-hover.png" alt="">
+							</a>
+							<a href="#" class="social-link for-img">
+								<img class="image" src="img/social/facebook.png" alt="">
+								<img class="image hover-state" src="img/social/facebook-hover.png" alt="">
+							</a>
+							<a href="#" class="social-link for-img">
+								<img class="image" src="img/social/vk.png" alt="">
+								<img class="image hover-state" src="img/social/vk-hover.png" alt="">
+							</a>
+						</div>
+						<div class="header-logo for-img">
+							<img class="logo_l" src="img/logo.png" alt=""> 
+							<img class="logo_m" src="img/logo_m.png" alt=""> 
+						</div>
+						<div class="header-search">
+							<form class="search">
+								<input class="search-input" type="text" placeholder="Поиск"> 
+								<button class="search-button">&nbsp;</button>
+							</form>
+						</div>
+
+						<div class="mobile-burger">
+							<span></span>
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
+				</div>
 			</div>
+			<div class="header-bottom">
+				<nav class="nav">
+					<ul class="nav-list">
+						<li class="nav-item nav-item_home">
+							<a href="#" class="nav-link nav-link_home">
+								<span class="nav-link-icon">
+									<img src="img/icon/home.png" alt="icon" class="image">
+									<img src="img/icon/home-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Главная</span>
+							</a>
+						</li>
+						<li class="nav-item nav-item_parent">
+							<a href="#" class="nav-link">
+								<span class="nav-link-icon">
+									<img src="img/icon/tour.png" alt="icon" class="image">
+									<img src="img/icon/tour-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Турниры</span>
+							</a>
+							<div class="nav-child">
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-1.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Лига Чемпионов</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-2.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Лига Европы</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-3.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Украина</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-4.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Россия</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-5.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Англия</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-6.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Испания</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-7.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Германия</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-8.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Италия</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-9.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">Франция</span>
+								</a>
+								<a href="" class="nav-child-link">
+									<span class="nav-child-icon">
+										<img src="img/icon/chempionship-10.png" alt="icon" class="image">
+									</span>
+									<span class="nav-child-text">ЧМ 2018</span>
+								</a>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="nav-link-icon">
+									<img src="img/icon/news.png" alt="icon" class="image">
+									<img src="img/icon/news-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Новости</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="nav-link-icon">
+									<img src="img/icon/article.png" alt="icon" class="image">
+									<img src="img/icon/article-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Статьи</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="nav-link-icon">
+									<img src="img/icon/match.png" alt="icon" class="image">
+									<img src="img/icon/match-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Матч-центр</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="nav-link-icon">
+									<img src="img/icon/media.png" alt="icon" class="image">
+									<img src="img/icon/media-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Медиа</span>
+							</a>
+						</li>
+						<li class="nav-item">
+							<a href="#" class="nav-link">
+								<span class="nav-link-icon">
+									<img src="img/icon/overview.png" alt="icon" class="image">
+									<img src="img/icon/overview-hover.png" alt="icon" class="image hover-state">
+								</span>
+								<span class="nav-link-text">Обзор матчей</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>			
 		</header>
 		<!-- HEADER END -->
 
 		<!-- CONTENT -->
 		<div class="content-wrapper">
-			<div class="container">
-				<div class="content-inner">
+			<div class="main">
+				<div class="container">
+					<div class="row">
+						<div class="col-6">
+							<section class="section">
+								<h2 class="section-header">
+									<a href="#" class="section-title">Новости</a>
+								</h2>
+								<div class="section-body pt0">
+									<div class="news">
+										<div class="news-img cover-img">
+											<img src="img/news-prev.jpg" alt="" class="image">
+										</div>
+										<div class="news-text">
+											<a href="#" class="news-title">Реал официально уволил Лопетеги и определился</a>
+											<div class="news-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+									<div class="news">
+										<div class="news-img cover-img">
+											<img src="img/news-prev.jpg" alt="" class="image">
+										</div>
+										<div class="news-text">
+											<a href="#" class="news-title">Мынай – Динамо: матч Кубка Украины будут </a>
+											<div class="news-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+									<div class="news">
+										<div class="news-img cover-img">
+											<img src="img/news-prev.jpg" alt="" class="image">
+										</div>
+										<div class="news-text">
+											<a href="#" class="news-title">Мынай – Динамо: матч Кубка Украины будут </a>
+											<div class="news-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+									<div class="news">
+										<div class="news-img cover-img">
+											<img src="img/news-prev.jpg" alt="" class="image">
+										</div>
+										<div class="news-text">
+											<a href="#" class="news-title">Мынай – Динамо: матч Кубка Украины будут </a>
+											<div class="news-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+									<div class="news">
+										<div class="news-img cover-img">
+											<img src="img/news-prev.jpg" alt="" class="image">
+										</div>
+										<div class="news-text">
+											<a href="#" class="news-title">Мынай – Динамо: матч Кубка Украины будут </a>
+											<div class="news-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+						<div class="col-6">
+							<section class="section">
+								<h2 class="section-header">
+									<a href="#" class="section-title">Обзоры матчей</a>
+								</h2>
+								<div class="section-body">
+									<div class="overview">
+										<div class="overview-img cover-img">
+											<img src="img/overview.jpg" alt="" class="image">
+											<button class="action"></button>
+										</div>
+										<div class="overview-text">
+											<a href="#" class="overview-title">Реал Мадрид 2-1 Виктория Пльзень<br /><span>Обзор матча</span></a>
+											<div class="overview-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+									<div class="overview">
+										<div class="overview-img cover-img">
+											<img src="img/overview.jpg" alt="" class="image">
+											<button class="action"></button>
+										</div>
+										<div class="overview-text">
+											<a href="#" class="overview-title">Реал Мадрид 2-1 Виктория Пльзень<br /><span>Обзор матча</span></a>
+											<div class="overview-info meta-info">
+												<span class="date">30.10.2018</span>
+												<span class="views">543</span>
+											</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+
+						<div class="col-12">
+							<a href="#" class="bunner for-img">
+								<img src="img/bunner.jpg" alt="">
+							</a>
+						</div>
+
+						<div class="col-12">
+							<section class="section">
+								<h2 class="section-header">
+									<a href="#" class="section-title">Матч-центр</a>
+								</h2>
+								<div class="section-body">
+									
+								</div>
+							</section>
+						</div>
+						<div class="col-12">
+							<section class="section">
+								<h2 class="section-header">
+									<a href="#" class="section-title">Статьи</a>
+								</h2>
+								<div class="section-body pt0">
+									<div class="row">
+										<div class="col-6">
+											<div class="article">
+												<div class="article-img cover-img">
+													<img src="img/article-prev.jpg" alt="" class="image">
+												</div>
+												<div class="article-text">
+													<a href="#" class="article-title">Марсело вновь получил травму – известный период восстановления бразильца</a>
+													<div class="article-info meta-info">
+														<span class="date">30.10.2018</span>
+														<span class="views">543</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="article">
+												<div class="article-img cover-img">
+													<img src="img/article-prev.jpg" alt="" class="image">
+												</div>
+												<div class="article-text">
+													<a href="#" class="article-title">Марсело вновь получил травму – известный период восстановления бразильца</a>
+													<div class="article-info meta-info">
+														<span class="date">30.10.2018</span>
+														<span class="views">543</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="article">
+												<div class="article-img cover-img">
+													<img src="img/article-prev.jpg" alt="" class="image">
+												</div>
+												<div class="article-text">
+													<a href="#" class="article-title">Марсело вновь получил травму – известный период восстановления бразильца</a>
+													<div class="article-info meta-info">
+														<span class="date">30.10.2018</span>
+														<span class="views">543</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-6">
+											<div class="article">
+												<div class="article-img cover-img">
+													<img src="img/article-prev.jpg" alt="" class="image">
+												</div>
+												<div class="article-text">
+													<a href="#" class="article-title">Марсело вновь получил травму – известный период восстановления бразильца</a>
+													<div class="article-info meta-info">
+														<span class="date">30.10.2018</span>
+														<span class="views">543</span>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="col-12">
+											<div class="text">СЕО ТЕКСТНападающий ПСЖ Неймар может оказаться за решеткой по обвинению в махинациях при переходе из Сантоса в Барселону. В суде началась перепроверка деталей перехода Неймара из бразильского Сантоса в Барселону, сообщает Lavanguardia. По информации издания, в суд на участников сделки перехода Неймара подал инвестиционный фонд DIS, который имел часть прав на форварда. По мнению представителей организации, реальная сумма трансфера была выше заявленной, и в итоге фонд недополучил деньги за сговора сторон. В начале 2018-го бразилец уже вызывался в суд по делу о мошенничестве при оформлении трансфера. Теперь его дело будет рассмотрено палатой по уголовным делам в присутствии трех судей. Если Неймара признают виновным, то срок возможного заключения может вырасти с двух до шести лет.</div>
+										</div>
+									</div>
+								</div>
+							</section>
+						</div>
+					</div>
 				</div>
 			</div>
+			<aside class="sidebar">
+				<div class="container">
+					<a href="#" class="bunner for-img"><img src="img/bunner-2.jpg" alt=""></a>
+
+					<section class="section">
+						<h2 class="section-header">
+							<a href="#" class="section-title section-title_no-icon">Лента новостей</a>
+						</h2>
+						<div class="section-body pt0">
+							
+						</div>
+					</section>
+				</div>
+			</aside>
 		</div>
 		<!-- CONTENT END -->
 
 		<!-- FOOTER -->
 		<footer class="footer">
 			<div class="container">
-				<div class="footer-inner"></div>
+				<div class="footer-inner">Footer</div>
 			</div>
 		</footer>
 		<!-- FOOTER END -->

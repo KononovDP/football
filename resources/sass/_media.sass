@@ -7,8 +7,71 @@
 	body
 		padding-top: 0
 	/*HEADER*/
+	.nav-link
+		justify-content: center
+		padding: 10px
+		text-align: center
+	.nav-link-icon
+		display: none
+	.nav-link-text
+		margin-left: 0
+	.nav-link_home
+		.nav-link-icon
+			display: inline-block
+
+
+	.content-wrapper .sidebar
+		display: none
+
+	/*FOOTER*/
+	.footer-top-inner
+		flex-wrap: wrap
+	.footer-block
+		flex-grow: 0
+		width: 20%
+		margin-bottom: 20px
+	
+@media only screen and (min-width : 768px)
+	.nav-item:hover
+		.nav-link
+			background: #eeeeee
+			color: #161616
+			.image
+				opacity: 0
+			.hover-state
+				opacity: 1
+		.nav-link_home
+			background: #fac919
+		.nav-child
+			opacity: 1
+			visibility: visible
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 767px)
+	.container
+		padding: 0 15px
+	.row .col-6
+		width: 100%
+	.section 
+		.section-body.pt0
+			padding-top: 20px !important
+
+	.content-wrapper .main
+		padding-top: 15px
+	
+	.wrapper
+		padding-top: 50px
+	/*HEADER*/
+	.header
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		background: #ffffff
+		border-bottom: 1px solid #eeeeee
+		z-index: 110
 	.header-line
-		padding: 18px 0
+		padding: 8px 0
 	.header-line-inner
 		align-items: center
 	.mobile-burger
@@ -19,61 +82,238 @@
 		display: none
 	.logo_m
 		display: block
-	.header-search
+	
+
+	.header-bottom
 		position: fixed
 		top: 0
 		left: 0
 		width: 100%
 		height: 100%
 		display: none
+		background: #ffffff
+		z-index: 110
+		&.visible
+			display: flex
+			flex-direction: column
+		.header-mobile 
+			display: block
+			padding: 16px 55px 11px 15px
+			border-bottom: 1px solid #eeeeee
+			button
+				display: none
+				background-color: transparent
+				border: none
+				visibility: hidden 
+				&.visible
+					display: inline-block
+					visibility: visible
+		.nav
+			flex: 1 1 100%
+			overflow: auto
+	.nav-list
+		flex-direction: column
+		background: #ffffff
+	.nav-item
+		width: 100%
+		margin-top: -1px
+		&:hover .nav-link 
+			background: #fac919
+			border-color: #fac919
+			z-index: 10
+	.nav-item_parent
+		&:after
+			position: absolute
+			top: 50%
+			right: 15px
+			transform: translateY(-50%)
+			display: block
+			content: ''
+			width: 11px
+			height: 18px
+			background: transparent url(../img/icon/arrow-right-thin.png) no-repeat center
+	.nav-link 
+		justify-content: flex-start
+		height: 48px
+		padding: 0 40px 0 15px
+		background: #ffffff
+		border-top: 1px solid #eeeeee
+		border-bottom: 1px solid #eeeeee
+		text-align: left
+		color: #161616
+
+	.nav-link-icon
+		display: inline-block
+		width: 22px
+		.image
+			display: none
+		.image.hover-state
+			display: block
+			position: static
+			opacity: 1
+	.nav-link-text
+		margin-left: 10px
+	.nav-link_home .nav-link-text
+		display: inline-block
+	
+	.nav-item 
+		.nav-child 
+			display: none
+		.nav-child-link
+			position: relative
+			height: 48px
+			margin-top: -1px
+			padding: 5px 15px
+			border-top: 1px solid #eeeeee
+			border-bottom: 1px solid #eeeeee
+			&:hover
+				border-color: #fac919
+				z-index: 10
+	.nav-item
+		.nav-child_active
+			position: fixed
+			top: 50px
+			left: 0
+			display: block
+			width: 100%
+			bottom: 0
+			background: #ffffff
+			z-index: 130
+			opacity: 1
+			visibility: visible
+			overflow: auto
+			transition: all 0s
+	
+
+	.header-search
+		display: none
+	.header-search_active
+		position: fixed
+		top: 50px
+		left: 0
+		width: 100%
+		bottom: 0
+		display: flex
 		align-items: center
 		justify-content: center
 		background: #ffffff
+		z-index: 130
+		.search 
+			max-width: 240px
+			margin: 0 auto
 
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 992px)
-	/**/
+
+	
+	/*OVERVIEW*/
+	.overview
+		margin: 0 -15px 20px -15px
+		.overview-img
+			&:before 
+				padding-top: 58.935%
+			.action
+				top: 19px
+				right: 14px
+		.overview-text
+			padding: 14px 13px 9px 16px
+			br
+				display: none
+	
+	/*ARTICLE*/
+	.article
+		position: relative
+		margin: 0 -15px 20px -15px
+		padding: 0
+		border-bottom: none
+		.article-img 
+			flex: 0 0 100%
+			width: 100%
+			margin-right: 0
+			&:before 
+				padding-top: 65.52%
+		.article-text
+			position: absolute
+			left: 0
+			width: 100%
+			bottom: 0
+			padding: 20px 13px 13px 15px
+		.article-title 
+			margin-top: 0
+			margin-bottom: 5px
+			color: #ffffff
+
+	/*MATCH*/
+	.match-header
+		padding: 5px 20px 5px 55px
+	.match
+		align-items: stretch
+		.match-date 
+			flex: 0 0 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 14px 5px
+			border-right: 1px solid #eeeeee
+		.match-info
+			flex-wrap: wrap
+		.match-member
+			flex-grow: 0
+			flex-basis: 100%
+			align-items: stretch
+			width: 100%
+			padding: 0 0 0 18px
+			border-bottom: 1px solid #eeeeee
+			&:last-child
+				border-bottom: none
+		.match-member_first
+			justify-content: flex-start
+		.match-member-icon
+			order: 1
+			align-self: center
+			margin: 0 7px 0 0
+			flex: 0 0 20px
+			text-align: left
+		.match-member-name
+			order: 2
+			flex: 1 1 100%
+			margin: 0
+			padding: 15px 0
+		.match-member-result
+			order: 3
+			flex: 0 0 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			border-left: 1px solid #eeeeee
+		.match-member_first 
+			text-align: left
+			.match-member-icon 
+				margin: 0 7px 0 0
+				flex: 0 0 20px
+				text-align: left
+
+		.match-separator
+			display: none
+		.match-status
+			display: none
 
 
-/* Small Devices, Tablets */
-@media only screen and (max-width : 768px)
-	/**/
+	/*FOOTER*/
+	.footer-top
+		display: none
+	.footer-bottom
+		padding: 15px 0 20px
+	.footer-bottom-inner
+		flex-direction: column
+		align-items: center
+		text-align: center
+	.footer-logo
+		order: -1
+		display: inline-block
+		margin: 10px 0 23px
+	.footer-copy
+		margin: 26px 0 9px
 
 
-/* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px)
-	/**/
-
-
-/* Custom, iPhone Retina */
-@media only screen and (max-width : 320px)
-	/**/
-
-
-/*==========  Mobile First  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px)
-	/**/
-
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px)
-	/**/
-
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px)
-	/**/
-
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px)
-	/**/
-
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px)
-	/**/
 

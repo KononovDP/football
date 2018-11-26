@@ -1,0 +1,48 @@
+/*tabs ob JS*/
+.tabs-header
+	display: flex
+	margin-bottom: 20px
+	.tab-toggle
+		position: relative
+		flex-grow: 1
+		flex-basis: 100px
+		display: flex
+		justify-content: center
+		align-items: center
+		min-height: 36px
+		padding: 5px 10px
+		margin-left: -1px
+		background-color: transparent
+		border: 1px solid #e6e6e6
+		font-size: 12px
+		line-height: 20px
+		cursor: pointer
+		&:first-child
+			margin-left: 0
+		.tab-toggle-icon
+			position: relative
+			margin-right: 10px
+			.active
+				display: none
+				visibility: hidden
+				opacity: 0
+	.tab-toggle_active
+		background: #fac919
+		border-color: #fac919
+		z-index: 10
+		.tab-toggle-icon
+			img
+				display: none
+			.active
+				display: block
+				visibility: visible
+				opacity: 1
+.tab-content
+	display: none
+
+.tab-content_active
+	display: block
+
+@media only screen and (max-width : 767px)
+	.tabs-header
+		margin: 0 -15px 20px -15px

@@ -83,11 +83,16 @@ $(document).ready(function() {
 	//object-fit polyfill
 	objectFitImages('.cover-img, .contain-img')
 
-	$('.accordion-header').on('click' , function(){
+	/*$('.accordion-header').on('click' , function(){
 		var body = $(this).closest('.accordion-item').find('.accordion-body');
 
 		$('.accordion-body').not(body).slideUp(300).closest('.accordion-item').removeClass('active');
 		body.slideToggle(300).closest('.accordion-item').toggleClass('active');
+	})*/
+
+	$('.accordion-header').on('click' , function(){
+		$(this).closest('.accordion-item').find('.accordion-body').slideToggle(300);
+		$(this).closest('.accordion-item').toggleClass('active')
 	})
 
 

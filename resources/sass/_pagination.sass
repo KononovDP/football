@@ -2,6 +2,7 @@
 .pagination
 	display: block
 	width: 100%
+	margin: 20px 0
 	.nav-links
 		width: 100%
 		display: flex
@@ -44,16 +45,21 @@
 				border-left: 8px solid #a4a4a4
 				border-top: 8px solid transparent
 				border-bottom: 8px solid transparent
-		&.current,
-		&:hover
+		&.current
 			background-color: #fac919
+			&:hover
+				color: #161616
+				cursor: default
+				pointer-events: none
+		&:hover
+			color: #efae1f
 		&.dots
 			cursor: default
 			&:hover
-				background-color: transparent
+				color: #161616
 
 	.page-numbers.prev:hover:before
-		border-right-color: #161616
+		border-right-color: #efae1f
 	.page-numbers.next:hover:before
-		border-left-color: #161616
+		border-left-color: #efae1f
 

@@ -106,17 +106,75 @@ img
 /*select*/
 .select
 	position: relative
-	width: 100%
-
+	width: auto
+	font-size: 15px
+	line-height: 36px
+	color: #161616
+	text-transform: none
+.select-option_selected
+	display: flex
+	align-items: center
+	justify-content: flex-end
+	font-size: 12px
+	line-height: 20px
+	cursor: pointer
+	.select-triangle
+		position: relative
+		display: inline-block
+		width: 20px
+		height: 20px
+		margin-left: 10px
+		background: #e6e6e6
+		transition: all .3s
+		&:after
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			border-top: 5px solid #161616
+			border-left: 5px solid transparent
+			border-right: 5px solid transparent
+	&:hover
+		.select-triangle
+			background: #fac919
 .select-list
 	display: none
 	position: absolute
 	top: 100%
-	left: 0
+	right: 0
+	width: auto
+	margin-top: 8px
+	background: #eeeeee
 	z-index: 30
-
+	&:before
+		position: absolute
+		top: 0
+		right: 0
+		transform: translateY(-8px)
+		display: block
+		content: ''
+		width: 0
+		height: 0
+		border-bottom: 8px solid #eeeeee
+		border-left: 8px solid transparent
+		border-right: 8px solid transparent
 .select-option
+	display: block
+	padding: 0 15px
+	background: #eeeeee
+	border-bottom: 1px solid #e6e6e6
+	white-space: nowrap
+	color: inherit
 	cursor: pointer
+	transition: all .3s
+	&:hover
+		background: #fac919
+
+
 
 /*tabs ob JS*/
 .tab-toggle
@@ -178,7 +236,6 @@ body
 
 
 /**/
-
 .content-wrapper
 	flex: 1 1 auto
 	display: flex
@@ -189,49 +246,6 @@ body
 	.sidebar
 		flex: 0 0 30%
 		padding: 30px 0
-
-.section
-	width: 100%
-	margin-bottom: 30px
-	.section-header
-		margin: 0
-		font-family: 'Open Sans Condensed', sans-serif
-		font-size: 17px
-		line-height: 22px
-		font-weight: 700
-		color: #161616
-		text-transform: uppercase
-	.section-title
-		position: relative
-		display: block
-		padding: 0 10px 0 0
-		width: 100%
-		border-bottom: 1px solid #fac919
-		color: inherit
-		transition: all .3s
-		&:after
-			position: absolute
-			top: 50%
-			right: 0
-			transform: translateY(-50%)
-			display: block
-			content: ''
-			width: 0
-			height: 0
-			border-left: 5px solid #161616
-			border-top: 5px solid transparent
-			border-bottom: 5px solid transparent
-			transition: all .3s
-		&:hover
-			color: #efae1f
-			&:after
-				border-left-color: #efae1f
-	.section-title_no-icon
-		padding: 0
-		&:after
-			display: none
-	.section-body
-		padding-top: 20px
 
 
 /*BUNNER*/

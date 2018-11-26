@@ -50,7 +50,7 @@ $(document).ready(function() {
 	$('.select-list .select-option').click(function(){
 		var $this = $(this);
 		var text = $this.text();
-		$this.parents('.select').find('.select-option_selected').text(text);
+		$this.parents('.select').find('.select-option_selected .text').text(text);
 		$this.parents('.select').find('input[type="hidden"]').val(text);
 		$this.parents('.select-list').fadeOut(0);		
 		$this.parents('.select').removeClass('select-open');

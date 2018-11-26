@@ -107,6 +107,7 @@ $(document).ready(function() {
 		unlockBody();
 	});
 
+
 	if(windowWidth < 768 ) {
 		$('.nav-item_parent').on('click' , function() {
 			$(this).find('.nav-child').addClass('nav-child_active');			
@@ -128,6 +129,6 @@ $(document).ready(function() {
 			$('.back-button').addClass('visible');
 			$('.header-search').addClass('header-search_active');
 		})
-	}
+	};
 
 }); 

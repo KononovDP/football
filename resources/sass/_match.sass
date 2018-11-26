@@ -1,0 +1,110 @@
+/*MATCH CENTER*/
+.match-header
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	padding: 5px 20px
+	background: #eeeeee
+	.championship-icon
+		margin-right: 5px
+.match-body
+	border: 1px solid #e6e6e6
+	border-top: none
+.match
+	display: flex
+	align-items: center
+	justify-content: center
+	border-bottom: 1px solid #e6e6e6
+	&:last-child
+		border-bottom: none
+	.match-date,
+	.match-status
+		flex: 0 0 110px
+		padding: 14px 20px
+	.match-date
+		font-size: 12px
+		line-height: 20px
+		color: #c50a1c
+	.match-info
+		flex: 1 1 100%
+		display: flex
+		justify-content: center
+		align-items: center
+	.match-member
+		flex-grow: 1
+		flex-basis: 100px
+		display: flex
+		align-items: center
+	.match-member-name
+		margin: 0 5px
+		font-weight: 300
+		line-height: 18px
+	.match-member-icon
+		flex: 0 0 18px
+		margin: 0 5px 0 15px
+	.match-member-result
+		font-weight: 500
+	.match-separator
+		margin: 0 3px
+	.match-member_first
+		justify-content: flex-end
+		text-align: right
+		.match-member-icon
+			margin: 0 15px 0 5px
+
+@media only screen and (max-width : 767px)
+	/*MATCH*/
+	.match-header
+		padding: 5px 20px 5px 55px
+	.match
+		align-items: stretch
+		.match-date 
+			flex: 0 0 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 14px 5px
+			border-right: 1px solid #eeeeee
+		.match-info
+			flex-wrap: wrap
+		.match-member
+			flex-grow: 0
+			flex-basis: 100%
+			align-items: stretch
+			width: 100%
+			padding: 0 0 0 18px
+			border-bottom: 1px solid #eeeeee
+			&:last-child
+				border-bottom: none
+		.match-member_first
+			justify-content: flex-start
+		.match-member-icon
+			order: 1
+			align-self: center
+			margin: 0 7px 0 0
+			flex: 0 0 20px
+			text-align: left
+		.match-member-name
+			order: 2
+			flex: 1 1 100%
+			margin: 0
+			padding: 15px 0
+		.match-member-result
+			order: 3
+			flex: 0 0 50px
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
+			border-left: 1px solid #eeeeee
+		.match-member_first 
+			text-align: left
+			.match-member-icon 
+				margin: 0 7px 0 0
+				flex: 0 0 20px
+				text-align: left
+
+		.match-separator
+			display: none
+		.match-status
+			display: none

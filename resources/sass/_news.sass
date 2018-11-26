@@ -1,0 +1,40 @@
+/*NEWS*/
+.news
+	display: flex
+	justify-content: flex-start
+	padding: 20px 0 15px
+	border-bottom: 1px solid #e6e6e6
+	.news-img
+		flex: 0 0 72px
+		margin-right: 20px
+		&:before
+			padding-top: 66.67%
+	.news-text
+		flex: 1 1 100%
+		display: flex
+		flex-direction: column
+	.news-title
+		display: inline-block
+		margin-top: -3px
+		color: #161616
+		&:hover
+			text-decoration: underline
+			color: #efae1f
+	.news-info
+		margin-top: auto
+
+.meta-info
+	display: flex
+	align-items: center
+	justify-content: space-between
+.date
+	font-size: 12px
+	line-height: 20px
+	color: #c50a1c
+.views
+	display: inline-block
+	padding: 0 0 0 35px
+	background: transparent url(../img/icon/eye.png) no-repeat left 10px center
+	font-size: 12px
+	line-height: 20px
+	color: #a4a4a4

@@ -1,0 +1,124 @@
+/*HEADER*/
+.header-line
+	padding: 23px 0
+.header-line-inner
+	display: flex
+	align-items: flex-start
+	justify-content: space-between
+
+.header-social,
+.header-logo,
+.header-search
+	flex-grow: 1
+	flex-basis: 0
+
+.logo_m
+	display: none
+
+.header-search
+	display: flex
+	.search
+		position: relative
+		width: 100%
+		max-width: 175px
+		margin-left: auto
+		.search-input
+			display: block
+			width: 100%
+			padding: 4px 25px 3px 5px
+			border:none
+			border-bottom: 1px solid #161616
+			color: #313131
+			transition: all .3s
+			&:focus
+				border-bottom-color: #fac919
+				~.search-button
+					background: transparent url(../img/icon/search-hover.png) no-repeat center
+		.search-button
+			position: absolute
+			top: 0
+			right: 0
+			display: block
+			width: 25px
+			height: 100%
+			background: transparent url(../img/icon/search.png) no-repeat center
+			border: none
+			cursor: pointer
+			transition: all .3s
+			&:hover
+				background: transparent url(../img/icon/search-hover.png) no-repeat center
+
+/*MOBILE BURGER*/
+.mobile-burger 
+	display: none
+	position: relative
+	width: 25px
+	height: 18px
+	cursor: pointer
+	z-index: 120
+	span 
+		position: absolute
+		left: 0
+		width: 100%
+		height: 2px
+		background: #161616
+		transition: all .3s
+		&:first-child 
+			top: 0 
+		&:nth-child(2),
+		&:nth-child(3) 
+			top: 8px
+		&:last-child 
+			top: 16px
+.mobile-burger.active 
+	span 
+		&:first-child 
+			top: 18px
+			width: 0%
+			left: 50%
+		&:nth-child(2) 
+			transform: rotate(45deg)
+		&:nth-child(3) 
+			transform: rotate(-45deg) 
+		&:last-child 
+			top: 18px
+			width: 0%
+			left: 50%
+
+
+@media only screen and (max-width : 767px)
+	.header
+		position: fixed
+		left: 0
+		top: 0
+		width: 100%
+		background: #ffffff
+		border-bottom: 1px solid #eeeeee
+		z-index: 110
+	.header-line
+		padding: 8px 0
+	.header-line-inner
+		align-items: center
+	.mobile-burger
+		display: block
+	.logo_l
+		display: none
+	.logo_m
+		display: block
+	
+	.header-search
+		display: none
+	.header-search_active
+		position: fixed
+		top: 50px
+		left: 0
+		width: 100%
+		bottom: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		background: #ffffff
+		z-index: 130
+		.search 
+			max-width: 240px
+			margin: 0 auto

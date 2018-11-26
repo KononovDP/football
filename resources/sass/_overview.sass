@@ -1,0 +1,51 @@
+/*OVERVIEW*/
+.overview
+	position: relative
+	margin-bottom: 20px
+	.overview-img
+		position: relative
+		width: 100%
+		&:before
+			padding-top: 55.345%
+		.action
+			position: absolute
+			top: 20px
+			right: 20px
+			display: block
+			width: 36px
+			height: 26px
+			background: #fac919 url(../img/icon/arrow-right.png) no-repeat center
+			border: none 
+			cursor: pointer
+	.overview-text 
+		position: absolute
+		left: 0
+		bottom: 0
+		width: 100%
+		display: block
+		padding: 14px 20px 14px 21px
+		background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.27) 25%,#000 100%)
+	.overview-title
+		font-size: 17px
+		line-height: 18px
+		color: #ffffff
+		span
+			font-size: 12px
+		&:hover
+			text-decoration: underline
+			color: #efae1f
+
+@media only screen and (max-width : 767px)	
+	/*OVERVIEW*/
+	.overview
+		margin: 0 -15px 20px -15px
+		.overview-img
+			&:before 
+				padding-top: 58.935%
+			.action
+				top: 19px
+				right: 14px
+		.overview-text
+			padding: 14px 13px 9px 16px
+			br
+				display: none

@@ -1,0 +1,81 @@
+/*FOOTER*/
+.footer
+	background: #313131
+.footer-top
+	padding: 20px 0 13px
+.footer-top-inner
+	display: flex
+	align-items: flex-start
+	justify-content: flex-start
+.footer-block
+	flex-grow: 1
+	padding-right: 10px
+.footer-title
+	display: inline-block
+	margin: 5px 0 17px
+	font-family: 'Open Sans Condensed', sans-serif
+	font-size: 17px
+	line-height: 22px
+	text-transform: uppercase
+	color: #ffffff
+	transition: all .3s
+	&:hover
+		color: #fac919
+.footer-nav
+	display: flex
+	flex-direction: column
+	align-items: flex-start
+.footer-nav-link
+	font-size: 14px
+	line-height: 24px
+	color: #a4a4a4
+	transition: all .3s
+	&:hover
+		color: #fac919
+.footer-bottom
+	padding-bottom: 25px
+.footer-bottom-inner
+	display: flex
+	justify-content: space-between
+	align-items: flex-end
+	font-size: 15px
+	line-height: 15px
+	color: #ffffff
+	a
+		color: inherit
+.footer-logo
+	display: none
+.footer-copy
+	display: flex
+	align-items: flex-end
+	font-size: 13px
+	line-height: 13px
+	.for-img
+		display: inline-block
+		margin-left: 8px
+
+@media only screen and (max-width : 1024px)
+	/*FOOTER*/
+	.footer-top-inner
+		flex-wrap: wrap
+	.footer-block
+		flex-grow: 0
+		width: 20%
+		margin-bottom: 20px
+
+@media only screen and (max-width : 767px)
+	/*FOOTER*/
+	.footer-top
+		display: none
+	.footer-bottom
+		padding: 15px 0 20px
+	.footer-bottom-inner
+		flex-direction: column
+		align-items: center
+		text-align: center
+	.footer-logo
+		order: -1
+		display: inline-block
+		margin: 10px 0 23px
+	.footer-copy
+		margin: 26px 0 9px

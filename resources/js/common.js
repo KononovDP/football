@@ -94,7 +94,12 @@ $(document).ready(function() {
 	$('.mobile-burger').on('click' , function(e){
 		e.preventDefault;
 		$(this).toggleClass('active');
-		$('.header-bottom').toggleClass('visible')
+		$('.header-bottom').toggleClass('visible');
+
+		$('.search-button').addClass('visible');
+		$('.nav-child.nav-child_active').removeClass('nav-child_active');
+		$('.header-search.header-search_active').removeClass('header-search_active');
+		$('.back-button').removeClass('visible');
 	});
 	$('.mobile-burger').clickToggle(function() {   
 		lockBody();

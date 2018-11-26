@@ -1,0 +1,212 @@
+/*NAVIGATION*/
+.header-mobile
+	display: none
+.nav-list
+	display: flex
+	background: #313131
+.nav-item
+	position: relative
+	flex-grow: 1
+	&:_home
+		flex-basis: 70px
+		flex-grow: 0		
+	.nav-child
+		position: absolute
+		left: 0
+		top: 100%
+		display: block
+		min-width: 195px
+		background: #eeeeee
+		visibility: hidden
+		opacity: 0
+		transition: all .3s
+		z-index: 10
+		.nav-child-link
+			display: flex
+			align-items: center
+			padding: 6px 16px 8px 16px
+			border-bottom: 1px solid #e6e6e6
+			color: inherit
+			white-space: nowrap
+			transition: all .3s
+			&:last-child
+				border-bottom: none
+			&:hover
+				background: #fac919
+		.nav-child-icon
+			flex: 0 0 25px
+			margin-right: 8px
+			font-size: 0
+			line-height: 0
+
+.nav-link
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	width: 100%
+	height: 50px
+	padding: 10px 10px 10px 37px
+	background: #313131
+	color: #c3c3c3
+	transition: all .3s
+	&:before
+		position: absolute
+		left: 0
+		top: 5px
+		bottom: 5px
+		display: block
+		content: ''
+		width: 1px
+		background: rgba(255,255,255,.15)
+.nav-link-icon
+	position: relative
+	display: inline-block
+	font-size: 0
+	line-height: 0
+	.image
+		transition: all .3s
+	.hover-state
+		position: absolute
+		top: 0
+		left: 0
+		opacity: 0
+.nav-link-text
+	display: inline-block
+	margin-left: 10px
+.nav-link_home
+	justify-content: center
+	padding: 10px
+	&:before
+		display: none
+	.nav-link-text
+		display: none
+
+@media only screen and (max-width : 1024px)
+	.nav-link
+		justify-content: center
+		padding: 10px
+		text-align: center
+	.nav-link-icon
+		display: none
+	.nav-link-text
+		margin-left: 0
+	.nav-link_home
+		.nav-link-icon
+			display: inline-block
+
+@media only screen and (min-width : 768px)
+	.nav-item:hover
+		.nav-link
+			background: #eeeeee
+			color: #161616
+			.image
+				opacity: 0
+			.hover-state
+				opacity: 1
+		.nav-link_home
+			background: #fac919
+		.nav-child
+			opacity: 1
+			visibility: visible
+
+@media only screen and (max-width : 767px)
+	.header-bottom
+		position: fixed
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		display: none
+		background: #ffffff
+		z-index: 110
+		&.visible
+			display: flex
+			flex-direction: column
+		.header-mobile 
+			display: block
+			padding: 16px 55px 11px 15px
+			border-bottom: 1px solid #eeeeee
+			button
+				display: none
+				background-color: transparent
+				border: none
+				visibility: hidden 
+				&.visible
+					display: inline-block
+					visibility: visible
+		.nav
+			flex: 1 1 100%
+			overflow: auto
+	.nav-list
+		flex-direction: column
+		background: #ffffff
+	.nav-item
+		width: 100%
+		margin-top: -1px
+		&:hover .nav-link 
+			background: #fac919
+			border-color: #fac919
+			z-index: 10
+	.nav-item_parent
+		&:after
+			position: absolute
+			top: 50%
+			right: 15px
+			transform: translateY(-50%)
+			display: block
+			content: ''
+			width: 11px
+			height: 18px
+			background: transparent url(../img/icon/arrow-right-thin.png) no-repeat center
+	.nav-link 
+		justify-content: flex-start
+		height: 48px
+		padding: 0 40px 0 15px
+		background: #ffffff
+		border-top: 1px solid #eeeeee
+		border-bottom: 1px solid #eeeeee
+		text-align: left
+		color: #161616
+
+	.nav-link-icon
+		display: inline-block
+		width: 22px
+		.image
+			display: none
+		.image.hover-state
+			display: block
+			position: static
+			opacity: 1
+	.nav-link-text
+		margin-left: 10px
+	.nav-link_home .nav-link-text
+		display: inline-block
+	
+	.nav-item 
+		.nav-child 
+			display: none
+		.nav-child-link
+			position: relative
+			height: 48px
+			margin-top: -1px
+			padding: 5px 15px
+			border-top: 1px solid #eeeeee
+			border-bottom: 1px solid #eeeeee
+			&:hover
+				border-color: #fac919
+				z-index: 10
+	.nav-item
+		.nav-child_active
+			position: fixed
+			top: 50px
+			left: 0
+			display: block
+			width: 100%
+			bottom: 0
+			background: #ffffff
+			z-index: 130
+			opacity: 1
+			visibility: visible
+			overflow: auto
+			transition: all 0s

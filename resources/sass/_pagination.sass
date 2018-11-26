@@ -1,0 +1,59 @@
+/*PAGINATION*/
+.pagination
+	display: block
+	width: 100%
+	.nav-links
+		width: 100%
+		display: flex
+		align-items: center
+		justify-content: center
+	.page-numbers
+		display: block
+		width: 32px
+		height: 32px
+		text-align: center
+		font-size: 15px
+		line-height: 32px
+		color: #161616
+		transition: all .3s
+		&.prev
+			position: relative
+			&:before
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				display: block
+				content: ''
+				width: 0
+				height: 0
+				border-right: 8px solid #a4a4a4
+				border-top: 8px solid transparent
+				border-bottom: 8px solid transparent
+		&.next
+			position: relative
+			&:before
+				position: absolute
+				top: 50%
+				left: 50%
+				transform: translate(-50%, -50%)
+				display: block
+				content: ''
+				width: 0
+				height: 0
+				border-left: 8px solid #a4a4a4
+				border-top: 8px solid transparent
+				border-bottom: 8px solid transparent
+		&.current,
+		&:hover
+			background-color: #fac919
+		&.dots
+			cursor: default
+			&:hover
+				background-color: transparent
+
+	.page-numbers.prev:hover:before
+		border-right-color: #161616
+	.page-numbers.next:hover:before
+		border-left-color: #161616
+

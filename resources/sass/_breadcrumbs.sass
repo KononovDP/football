@@ -1,0 +1,26 @@
+/*BREADCRUMBS*/
+.breadcrumbs
+	display: flex
+	align-items: center
+	justify-content: flex-start
+	flex-wrap: wrap
+	margin: -22px 0 2px
+	font-size: 12px
+	line-height: 20px
+	color: #a4a4a4
+	.breadcrumbs-link
+		color: inherit
+		&:hover
+			text-decoration: underline
+	.breadcrumbs-link_current
+		color: #161616
+		cursor: default
+		pointer-events: none
+		&:hover
+			text-decoration: none
+
+
+@media only screen and (max-width : 767px)
+	/*BREDCRUMBS*/
+	.breadcrumbs
+		display: none

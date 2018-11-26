@@ -119,7 +119,6 @@ gulp.task('build', ['removedist', 'imagemin', 'sass', 'lib-css', 'js', 'lib-js']
 		'resources/js/lib.min.js',
 		'resources/js/common.js'
 		])
-		.pipe(uglify())
 		.pipe(gulp.dest('public/js'));
 
 	var buildImg = gulp.src([

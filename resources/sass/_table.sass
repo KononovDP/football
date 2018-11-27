@@ -1,0 +1,196 @@
+.table
+	margin-bottom: 20px
+	border: 1px solid #e6e6e6
+.table-header
+	display: flex
+	justify-content: space-between
+	align-items: center
+	min-height: 46px
+	padding: 5px 20px
+	font-weight: 300
+	.table-title
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		.table-title-icon
+			margin-right: 10px
+		.table-title-text
+			font-size: 15px
+			line-height: 16px
+			font-weight: 500
+			span
+				display: block
+				font-size: 12px
+				line-height: 16px
+				color: #c50a1c
+	.table-status
+		font-size: 12px
+		line-height: 20px
+		font-weight: 300
+		color: #a4a4a4
+		span
+			color: #c50a1c
+
+.table-row
+	display: flex
+	min-height: 49px
+	margin-bottom: -1px
+	border-bottom: 1px solid #e6e6e6
+	&:last-child
+		border-bottom: none
+	.table-col-bonus
+		flex: 0 0 56px
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+	.table-col-club
+		flex: 1 1 auto
+		display: flex
+		justify-content: flex-start
+		align-items: center
+		.club-position
+			font-size: 12px
+			line-height: 18px
+			color: #a4a4a4
+		.club-icon
+			flex: 0 0 25px
+			margin: 0 9px 0 13px
+		.club-name
+	.table-col-data
+		flex: 0 0 60px
+		display: flex
+		justify-content: center
+		align-items: center
+		text-align: center
+		line-height: 48px
+	.table-col-wrap
+		flex: 0 0 420px
+		.table-col-wrap-inner
+			display: flex
+			justify-content: flex-start
+			align-items: center
+	.show-full-table
+		position: relative
+		display: block
+		width: 100%
+		height: 100%
+		background: transparent
+		border: none
+		cursor: pointer
+		&:after
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			border-top: 8px solid #161616
+			border-left: 8px solid transparent
+			border-right: 8px solid transparent
+.additional
+	display: none 
+
+
+.table-row_header
+	min-height: 33px
+	background: #eeeeee
+	text-align: center
+	font-size: 12px
+	line-height: 33px
+	color: #a4a4a4
+	.table-col-club
+		padding-left: 15px
+		text-align: left
+	.table-col-data
+		line-height: 33px
+
+
+@media only screen and (max-width : 767px)
+	.table-header
+		padding: 4px 15px
+		.table-title
+			.table-title-icon
+				flex: 0 0 20px
+			.table-title-text
+				line-height: 15px
+				span
+					display: none
+		.table-status
+			line-height: 15px
+			span
+				display: block
+
+	.table-row
+		.table-col-bonus
+			flex:  0 0 46px
+		.table-col-data
+			flex: 0 0 30px
+		.table-col-wrap
+			order: 10
+			position: relative
+			flex: 0 0 50px
+			&:before
+				position: absolute
+				left: 0
+				top: 0
+				display: block
+				width: 100%
+				height: 100%
+				content: ''
+				background: transparent url(../img/icon/stat.png) no-repeat center
+			.table-col-wrap-inner
+				position: absolute
+				top: 100%
+				right: 50%
+				transform: translateX(8px)
+				width: auto
+				min-width: 100px
+				flex-direction: column
+				background: #eeeeee
+				visibility: hidden
+				opacity: 0
+				box-shadow: 3px 3px 6px 0 rgba(61,61,61,.15)
+				transition: all .3s
+				z-index: 100
+				&:before
+					position: absolute
+					top: 0
+					right: 0
+					transform: translateY(-8px)
+					display: block
+					content: ''
+					width: 0
+					height: 0
+					border-bottom: 8px solid #eeeeee
+					border-left: 8px solid transparent
+					border-right: 8px solid transparent
+				.table-col-data
+					flex: 0 0 auto
+					position: relative
+					width: 100%
+					justify-content: flex-start
+					min-height: 36px
+					line-height: 36px
+					border-bottom: 1px solid #e6e6e6
+					&:before
+						box-sizing: border-box
+						display: inline-block
+						width: 60%
+						padding-left: 15px
+						text-align: left
+						content: attr(data-label)
+		.table-col-wrap:hover
+			&:before
+				background: transparent url(../img/icon/stat-hover.png) no-repeat center
+			.table-col-wrap-inner
+				visibility: visible
+				opacity: 1
+	
+	.table-row_header
+		.table-col-wrap:before
+			display: none
+		.table-col-wrap-inner
+			display: none

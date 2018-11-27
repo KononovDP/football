@@ -136,4 +136,10 @@ $(document).ready(function() {
 		})
 	};
 
+	$('.show-full-table').on('click' , function() {
+		$(this).fadeOut(300);
+		$(this).closest('.table').find('.additional').slideDown(300);
+		return false;
+	})
+
 }); 

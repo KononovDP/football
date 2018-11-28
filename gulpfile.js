@@ -37,7 +37,8 @@ gulp.task('sass', function() {
 gulp.task('lib-css', function() {
 	// указываем путь к необходимым файлам
 	return gulp.src([
-		'resources/libs/slick-carousel/slick/slick.css'
+		'resources/libs/slick-carousel/slick/slick.css',
+		'resources/libs/fancybox-2.1.7/source/jquery.fancybox.css'
 	])
 	// склеиваем их в один файл, с учетом из порядка на предыдущем шаге 
 	.pipe(concat('lib.min.css'))
@@ -63,7 +64,8 @@ gulp.task('lib-js', function() {
 	return gulp.src([
 		'resources/libs/jquery/dist/jquery.min.js',
 		'resources/libs/object-fit-images/dist/ofi.browser.js',
-		'resources/libs/slick-carousel/slick/slick.js'
+		'resources/libs/slick-carousel/slick/slick.js',
+		'resources/libs/fancybox-2.1.7/source/jquery.fancybox.pack.js'
 	])
 	// склеиваем их в один файл, с учетом их порядка на предыдущем шаге 
 	.pipe(concat('lib.min.js'))

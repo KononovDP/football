@@ -194,4 +194,21 @@ $(document).ready(function() {
 		});
 	};
 
+	$(".fancybox").fancybox({
+		helpers : {
+	        overlay : {
+	            css : {
+	                'background' : 'rgba(46,46,46,.9)'
+	            }
+	        }
+	    },
+		openEffect  : 'none',
+        closeEffect : 'none',
+        nextEffect  : 'none',
+        prevEffect  : 'none',
+        padding     : 0,
+        margin      : [20, 60, 20, 60] // Increase left/right margin
+	});
+
+	
 }); 

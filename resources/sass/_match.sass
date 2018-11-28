@@ -60,6 +60,92 @@
 		.match-member-icon
 			margin: 0 15px 0 5px
 
+.section-match-center
+	position: relative
+	.calendar
+		position: absolute
+		top: -3px
+		right: 0
+
+.match-slider
+	padding: 0 30px
+	font-size: 0
+	line-height: 0
+	.slick-arrow
+		position: absolute
+		top: 0
+		height: 100%
+		width: 30px
+		background: #313131
+		cursor: pointer
+		&:before
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			display: block
+			content: ''
+			width: 0
+			height: 0
+			border-top: 8px solid transparent
+			border-bottom: 8px solid transparent
+			transition: all .3s
+	.slick-prev
+		left: 0
+		&:before
+			border-right: 8px solid #a4a4a4
+	.slick-next
+		right: 0
+		&:before
+			border-left: 8px solid #a4a4a4
+	.slick-prev:hover:before
+		border-right: 8px solid #fac919
+	.slick-next:hover:before
+		border-left: 8px solid #fac919
+
+	.match-slider-link
+		display: flex
+		align-items: center
+		height: 36px
+		padding: 6px 16px 7px 16px
+		background: #313131
+		border-right: 1px solid rgba(255, 255, 255, .15)
+		font-size: 12px
+		line-height: 20px
+		color: #c3c3c3
+		white-space: nowrap
+		transition: all .3s
+		&:last-child
+			border-bottom: none
+		.match-slider-icon
+			position: relative
+			flex: 0 0 25px
+			margin-right: 8px
+			font-size: 0
+			line-height: 0
+			.image
+				opacity: 1
+				transition: all .3s
+			.image.hover
+				position: absolute
+				top: 0
+				left: 0
+				opacity: 0
+	.match-slider-link:hover,
+	.match-slider-link.active
+		background: #fac919
+		color: #161616	
+		.match-slider-icon
+			.image
+				opacity: 0
+			.image.hover
+				opacity: 1	
+
+	.slick-active
+		.match-slider-link
+			background: #fac919
+			color: #161616
+
 @media only screen and (max-width : 767px)
 	/*MATCH*/
 	.match-header
@@ -118,3 +204,59 @@
 			display: none
 		.match-status
 			display: none
+
+	.match-slider
+		display: flex
+		margin: 0 -15px 20px
+		padding: 0
+		overflow-x: auto
+	
+	.section-match-center
+		.section-header
+			display: none
+		.calendar
+			position: static			
+			display: flex
+			align-items: center
+			height: 112px
+			margin: 0 -15px
+			background: #161616 url(../img/select-day-bg.jpg) no-repeat center
+			background-size: cover 
+			.calendar-option_selected
+				display: none
+			.calendar-list
+				position: static
+				display: block
+				width: 100%
+		.calendar-list.slick-slider
+			.slick-slide
+				text-align: center
+				.calendar-option
+					display: inline-block
+					padding: 2px 3px
+					background-color: transparent
+					font-weight: 300
+					color: #fff
+					transform: scale(.8)
+					transition: all .3s
+			.slick-current 
+				.calendar-option
+					display: inline-block
+					padding: 0 3px
+					background: #fac919
+					font-family: 'Open Sans Condensed', sans-serif
+					font-size: 17px
+					line-height: 22px
+					text-transform: uppercase
+					transform: scale(1)
+					transition: all .3s
+
+@media only screen and (max-width : 479px)
+	.section-match-center
+		.calendar-list.slick-slider
+			.slick-slide
+				.calendar-option
+					padding: 2px 0
+			.slick-current 
+				.calendar-option
+					padding: 0

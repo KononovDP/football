@@ -1,8 +1,8 @@
 /*tabs ob JS*/
-.tabs-header
+.menu
 	display: flex
 	margin-bottom: 20px
-	.tab-toggle
+	.menu-link
 		position: relative
 		flex-grow: 1
 		flex-basis: 100px
@@ -19,30 +19,25 @@
 		cursor: pointer
 		&:first-child
 			margin-left: 0
-		.tab-toggle-icon
+		.menu-link-icon
 			position: relative
 			margin-right: 10px
 			.active
 				display: none
 				visibility: hidden
 				opacity: 0
-	.tab-toggle_active
+	.menu-link_active
 		background: #fac919
 		border-color: #fac919
 		z-index: 10
-		.tab-toggle-icon
+		.menu-link-icon
 			img
 				display: none
 			.active
 				display: block
 				visibility: visible
 				opacity: 1
-.tab-content
-	display: none
-
-.tab-content_active
-	display: block
 
 @media only screen and (max-width : 767px)
-	.tabs-header
+	.menu
 		margin: 0 -15px 20px -15px

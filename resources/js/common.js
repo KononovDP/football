@@ -40,14 +40,14 @@ $(document).ready(function() {
 	}
 
 	//custom dropdown menu
-	$('.select-option_selected').click(function(){
+	$('.select .select-option_selected').click(function(){
 		var parent = $(this).parents('.select');
 		
 		parent.find('.select-list').fadeIn(0);
 		parent.toggleClass('select-open');
 	});
 
-	$('.select-list .select-option').click(function(){
+	$('.select .select-list .select-option').click(function(){
 		var $this = $(this);
 		var text = $this.text();
 		$this.parents('.select').find('.select-option_selected .text').text(text);
@@ -113,7 +113,16 @@ $(document).ready(function() {
 	});
 
 
-	if(windowWidth < 768 ) {
+	if(windowWidth >= 768) {
+		$('.calendar-option_selected').click(function(){
+			var parent = $(this).parents('.calendar');
+			
+			parent.find('.calendar-list').fadeIn(0);
+			parent.toggleClass('calendar-open');
+		});
+	}
+
+	if(windowWidth < 768) {
 		$('.nav-item_parent').on('click' , function() {
 			$(this).find('.nav-child').addClass('nav-child_active');			
 			$('.search-button').removeClass('visible');
@@ -134,6 +143,28 @@ $(document).ready(function() {
 			$('.back-button').addClass('visible');
 			$('.header-search').addClass('header-search_active');
 		})
+
+		$('.calendar .calendar-list').slick({
+			dots: false,
+			infinite: true,
+			arrows: false,
+			slidesToShow: 5,
+			centerMode: true,
+  			focusOnSelect: true,
+  			responsive: [
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 3,
+					}
+				}
+			],
+  			onInit: function(){
+  				$('.calendar .calendar-list').slickGoTo(7);
+  			}
+		});
+		
+
 	};
 
 	$('.show-full-table').on('click' , function() {
@@ -141,5 +172,26 @@ $(document).ready(function() {
 		$(this).closest('.table').find('.additional').slideDown(300);
 		return false;
 	})
+
+	if(windowWidth >= 768) {
+		$('.match-slider').slick({
+			dots: false,
+			infinite: true,
+			speed: 300,
+			slidesToShow: 1,
+			variableWidth: true,
+			arrows: true,
+			prevArrow: '<button type="button" class="slick-prev"></button>',
+			nextArrow: '<button type="button" class="slick-next"></button>',
+			responsive: [
+				{
+					breakpoint: 768,
+					settings: {
+						arrows: false,
+					}
+				}
+			]
+		});
+	};
 
 }); 

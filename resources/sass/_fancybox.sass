@@ -1,5 +1,4 @@
 .fancybox-overlay
-	//background: rgba(46,46,46,.9)
 	.fancybox-wrap
 		transform: none
 	.fancybox-close
@@ -9,7 +8,11 @@
 		display: block
 		width: 48px
 		height: 48px
-		background: #ffffff
+		background: #ffffff url(../img/icon/close.png) no-repeat center
+		cursor: pointer
+		transition: all .3s
+		&:hover
+			background: #fac919 url(../img/icon/close.png) no-repeat center
 	.fancybox-nav
 		position: fixed
 		top: 50%
@@ -17,8 +20,47 @@
 		display: block
 		width: 48px
 		height: 48px
-		background: #ffffff		
+		cursor: pointer
+		transition: all .3s
 		&.fancybox-prev
 			left: 0
+			background: #ffffff url(../img/icon/arrow-prev.png) no-repeat center
+			&:hover
+				background: #fac919 url(../img/icon/arrow-prev.png) no-repeat center
 		&.fancybox-next
 			right: 17px
+			background: #ffffff url(../img/icon/arrow-next.png) no-repeat center
+			&:hover
+				background: #fac919 url(../img/icon/arrow-next.png) no-repeat center
+
+
+@media only screen and (max-width : 1024px)
+	.fancybox-overlay
+		.fancybox-close
+			right: 0
+		.fancybox-nav
+			&.fancybox-next
+				right: 0
+
+@media only screen and (max-width : 767px)
+	.fancybox-overlay
+		.fancybox-wrap
+			transform: translate3d(0,0,0)
+		.fancybox-close
+			top: -62px
+			right: 15px
+			width: 32px
+			height: 32px
+		.fancybox-nav
+			position: absolute
+			top: 100%
+			transform: none
+			width: 32px
+			height: 32px
+			margin-top: 30px
+			&.fancybox-prev
+				left: 50%
+				margin-left: -47px
+			&.fancybox-next
+				right: 50%
+				margin-right: -47px

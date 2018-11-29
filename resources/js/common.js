@@ -207,7 +207,7 @@ $(document).ready(function() {
         nextEffect  : 'none',
         prevEffect  : 'none',
         padding     : 0,
-        margin      : [20, 60, 20, 60] // Increase left/right margin
+        margin      : [30, 0, 30, 0] // Increase left/right margin
 	});
 
 	

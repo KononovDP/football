@@ -1,0 +1,50 @@
+.popup
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  display: none
+  flex-direction: column
+  background: #ffffff
+  z-index: 110
+  .popup-header
+    flex: 0 0 auto
+    display: flex
+    align-items: center
+    justify-content: flex-end
+    padding: 20px 20px 20px 20px
+  .popup-close
+    display: block
+    width: 32px
+    height: 32px
+    background: #ffffff url(../img/icon/close.png) no-repeat center
+    border: none
+  .popup-body
+    flex: 0 1 100%
+    background: #ffffff
+    overflow-y: auto
+
+.sticky
+  position: fixed
+  left: 0
+  right: 0
+  bottom: 0
+  display: none
+  background: #e6e6e6
+  .sticky-close
+    position: absolute
+    top: 0
+    right: 0
+    transform: translate(-10px, -100%)
+    display: block
+    width: 32px
+    height: 32px
+    background: #fac919 url(../img/icon/close.png) no-repeat center
+    border: none
+
+
+
+@media screen and (max-width: 767px)
+    .popup, .sticky
+      //display: flex

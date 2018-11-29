@@ -38,14 +38,29 @@
 .overview_sm
 	display: flex
 	align-items: flex-start
-	padding: 20px 10px
+	padding: 20px 15px
 	.overview_sm-img
-		flex: 0 0 30%
-		margin-right: 20px
+		position: relative
+		flex: 0 0 26%
+		margin-right: 15px
 		&:before
-			padding-top: 65%
+			padding-top: 70%
+		button
+			position: absolute
+			top: 5px
+			right: 5px
+			display: block
+			width: 20px
+			height: 15px
+			background: #fac919 url(../img/icon/arrow-right.png) no-repeat center
 	.overview_sm-text
 		flex: 1 1 100%
+		font-size: 17px
+		line-height: 18px
+		font-weight: 500
+		span
+			font-size: 13px
+			font-weight: 400
 
 @media only screen and (max-width : 767px)	
 	/*OVERVIEW*/

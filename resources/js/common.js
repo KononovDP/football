@@ -5,18 +5,19 @@ $(document).ready(function() {
 
 	//truncate
 	if(windowWidth >= 768) {
-		var target = $('.text-ellipsis'),
-			targetText = target.text(),
-			targetTextLenght = targetText.length,
-			maxLength = 53;
+		$('.text-ellipsis').each(function() {
+			var target = $(this),
+				targetText = target.text(),
+				targetTextLenght = targetText.length,
+				maxLength = 53;
 
-		if(targetTextLenght > maxLength) {
-			var newText = targetText.substring(0, maxLength - 3) + '...'; 
-		}
-		
-		target = target.text(newText);
-	};
-	
+			if(targetTextLenght > maxLength) {
+				var newText = targetText.substring(0, maxLength - 3) + '...'; 
+			}
+			
+			target = target.text(newText);
+		});
+	};	
 
 	//toggler function
 	(function($) {

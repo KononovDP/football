@@ -120,6 +120,25 @@ $(document).ready(function() {
 			parent.find('.calendar-list').fadeIn(0);
 			parent.toggleClass('calendar-open');
 		});
+
+		$('.calendar-list .calendar-option').click(function(){
+			var $this = $(this);
+			var text = $this.text();
+			$this.parents('.calendar').find('.calendar-option_selected .text').text(text);
+			$this.parents('.calendar').find('input[type="hidden"]').val(text);
+			$this.parents('.calendar-list').fadeOut(0);		
+			$this.parents('.calendar').removeClass('calendar-open');
+		});
+
+		$(function(){
+			$(document).click(function(event) {
+				if ($(event.target).closest(".calendar").length) return;
+				$(".calendar-list").fadeOut(0);		
+				$('.calendar').removeClass('calendar-open');
+				event.stopPropagation();
+			});
+		});
+
 	}
 
 	if(windowWidth < 768) {
@@ -162,8 +181,7 @@ $(document).ready(function() {
   			onInit: function(){
   				$('.calendar .calendar-list').slickGoTo(7);
   			}
-		});
-		
+		});	
 
 	};
 
@@ -209,6 +227,16 @@ $(document).ready(function() {
         padding     : 0,
         margin      : [30, 0, 30, 0] // Increase left/right margin
 	});
+
+	$('.popup-close').on('click' , function(e) {
+		e.preventDefault;
+		$(this).closest('.popup').fadeOut(300);
+	});
+
+	$('.sticky-close').on('click' , function(e) {
+		e.preventDefault;
+		$(this).closest('.sticky').fadeOut(300);
+	})
 
 	
 }); 

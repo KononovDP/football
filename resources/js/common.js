@@ -3,6 +3,21 @@ $(document).ready(function() {
 	var scrollTop = $(window).scrollTop(),
 		windowWidth = $(window).width();
 
+	//truncate
+	if(windowWidth >= 768) {
+		var target = $('.text-ellipsis'),
+			targetText = target.text(),
+			targetTextLenght = targetText.length,
+			maxLength = 53;
+
+		if(targetTextLenght > maxLength) {
+			var newText = targetText.substring(0, maxLength - 3) + '...'; 
+		}
+		
+		target = target.text(newText);
+	};
+	
+
 	//toggler function
 	(function($) {
 		$.fn.clickToggle = function(func1, func2) {
@@ -120,6 +135,25 @@ $(document).ready(function() {
 			parent.find('.calendar-list').fadeIn(0);
 			parent.toggleClass('calendar-open');
 		});
+
+		$('.calendar-list .calendar-option').click(function(){
+			var $this = $(this);
+			var text = $this.text();
+			$this.parents('.calendar').find('.calendar-option_selected .text').text(text);
+			$this.parents('.calendar').find('input[type="hidden"]').val(text);
+			$this.parents('.calendar-list').fadeOut(0);		
+			$this.parents('.calendar').removeClass('calendar-open');
+		});
+
+		$(function(){
+			$(document).click(function(event) {
+				if ($(event.target).closest(".calendar").length) return;
+				$(".calendar-list").fadeOut(0);		
+				$('.calendar').removeClass('calendar-open');
+				event.stopPropagation();
+			});
+		});
+
 	}
 
 	if(windowWidth < 768) {
@@ -162,8 +196,7 @@ $(document).ready(function() {
   			onInit: function(){
   				$('.calendar .calendar-list').slickGoTo(7);
   			}
-		});
-		
+		});	
 
 	};
 
@@ -209,6 +242,16 @@ $(document).ready(function() {
         padding     : 0,
         margin      : [30, 0, 30, 0] // Increase left/right margin
 	});
+
+	$('.popup-close').on('click' , function(e) {
+		e.preventDefault;
+		$(this).closest('.popup').fadeOut(300);
+	});
+
+	$('.sticky-close').on('click' , function(e) {
+		e.preventDefault;
+		$(this).closest('.sticky').fadeOut(300);
+	})
 
 	
 }); 

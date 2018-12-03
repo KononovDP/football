@@ -1,4 +1,10 @@
 /*NEWS*/
+.section-news
+	position: relative
+	.section-header_dropdown-wrap
+		position: absolute
+		top: -3px
+		right: 0
 .news
 	display: flex
 	justify-content: flex-start
@@ -16,7 +22,9 @@
 	.news-title
 		display: inline-block
 		margin-top: -3px
+		max-height: 36px
 		color: #161616
+		overflow: hidden 
 		&:hover
 			text-decoration: underline
 			color: #efae1f

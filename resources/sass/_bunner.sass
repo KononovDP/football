@@ -1,0 +1,26 @@
+/*BUNNER*/
+.bunner
+	display: block
+	margin-bottom: 30px
+	img
+		width: 100%
+	.bunner-desktop
+		display: block
+	.bunner-mobile
+		display: none
+.bunner_bordered
+	margin: 10px 0
+	&:before, &:after
+		display: block
+		content: ''
+		width: 100%
+		height: 23px
+		margin: 5px 0
+		background: #ebebeb
+
+@media only screen and (max-width : 767px)
+	.bunner
+		.bunner-desktop
+			display: none
+		.bunner-mobile
+			display: block

@@ -3,22 +3,6 @@ $(document).ready(function() {
 	var scrollTop = $(window).scrollTop(),
 		windowWidth = $(window).width();
 
-	//truncate
-	if(windowWidth >= 768) {
-		$('.text-ellipsis').each(function() {
-			var target = $(this),
-				targetText = target.text(),
-				targetTextLenght = targetText.length,
-				maxLength = 53;
-
-			if(targetTextLenght > maxLength) {
-				var newText = targetText.substring(0, maxLength - 3) + '...'; 
-			}
-			
-			target = target.text(newText);
-		});
-	};	
-
 	//toggler function
 	(function($) {
 		$.fn.clickToggle = function(func1, func2) {

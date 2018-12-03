@@ -142,22 +142,23 @@ $(document).ready(function() {
 	}
 
 	if(windowWidth < 768) {
-		$('.nav-item_parent').on('click' , function() {
+		$('.nav-item_parent').on('click' , function(e) {
+			e.preventDefault;
 			$(this).find('.nav-child').addClass('nav-child_active');			
 			$('.search-button').removeClass('visible');
 			$('.back-button').addClass('visible');
-			return false;
 		});
 
-		$('.back-button').on('click' , function() {
-			$(this).removeClass('visible');	
+		$('.back-button').on('click' , function(e) {
+			e.preventDefault;
+				$(this).removeClass('visible');	
 			$('.search-button').addClass('visible');
 			$('.header-search.header-search_active').removeClass('header-search_active');
 			$('.nav-child.nav-child_active').removeClass('nav-child_active');
-			return false;
 		})
 
-		$('.search-button').on('click' , function() {
+		$('.search-button').on('click' , function(e) {
+			e.preventDefault;
 			$(this).removeClass('visible');	
 			$('.back-button').addClass('visible');
 			$('.header-search').addClass('header-search_active');

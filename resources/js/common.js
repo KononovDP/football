@@ -164,26 +164,6 @@ $(document).ready(function() {
 			$('.header-search').addClass('header-search_active');
 		})
 
-		$('.calendar .calendar-list').slick({
-			dots: false,
-			infinite: true,
-			arrows: false,
-			slidesToShow: 5,
-			centerMode: true,
-  			focusOnSelect: true,
-  			responsive: [
-				{
-					breakpoint: 480,
-					settings: {
-						slidesToShow: 3,
-					}
-				}
-			],
-  			onInit: function(){
-  				$('.calendar .calendar-list').slickGoTo(7);
-  			}
-		});	
-
 	};
 
 	$('.show-full-table').on('click' , function() {

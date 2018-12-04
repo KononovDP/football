@@ -80,9 +80,11 @@
 		right: 0
 
 .match-slider
+	height: 36px
 	padding: 0 30px
 	font-size: 0
 	line-height: 0
+	overflow: hidden
 	.slick-arrow
 		position: absolute
 		top: 0
@@ -241,32 +243,31 @@
 		.section-header
 			display: none
 		.calendar
-			position: static			
+			position: relative			
 			display: flex
 			align-items: center
 			height: 112px
 			margin: 0 -15px
 			background: #161616 url(../img/select-day-bg.jpg) no-repeat center
 			background-size: cover 
+			overflow-x: auto
 			.calendar-option_selected
 				display: none
 			.calendar-list
-				position: static
+				position: absolute
 				display: block
-				width: 100%
-		.calendar-list.slick-slider
-			.slick-slide
-				text-align: center
+				overflow-x: auto
+				white-space: nowrap
 				.calendar-option
 					display: inline-block
+					width: 100px
 					padding: 2px 3px
 					background-color: transparent
+					text-align: center
 					font-weight: 300
 					color: #fff
-					transform: scale(.8)
 					transition: all .3s
-			.slick-current 
-				.calendar-option
+				.calendar-option_active
 					display: inline-block
 					padding: 0 3px
 					background: #fac919
@@ -279,10 +280,7 @@
 
 @media only screen and (max-width : 479px)
 	.section-match-center
-		.calendar-list.slick-slider
-			.slick-slide
+		.calendar
+			.calendar-list
 				.calendar-option
-					padding: 2px 0
-			.slick-current 
-				.calendar-option
-					padding: 0
+					width: 80px

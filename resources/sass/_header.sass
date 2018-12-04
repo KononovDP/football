@@ -7,12 +7,14 @@
 	justify-content: space-between
 
 .header-social,
-.header-logo,
 .header-search
 	flex-grow: 1
 	flex-basis: 0
 .social.header-social
 	margin: 5px 0
+
+.header-logo
+	display: block
 .logo_m
 	display: none
 
@@ -29,6 +31,7 @@
 			padding: 4px 25px 3px 5px
 			border:none
 			border-bottom: 1px solid #161616
+			border-radius: 0
 			color: #313131
 			transition: all .3s
 			&:focus
@@ -110,6 +113,9 @@
 	.header-search
 		display: none
 	.header-search_active
+
+
+
 		position: fixed
 		top: 50px
 		left: 0
@@ -123,3 +129,5 @@
 		.search 
 			max-width: 240px
 			margin: 0 auto
+			.search-button
+				background: transparent url(../img/icon/search-icon_black.png) no-repeat center

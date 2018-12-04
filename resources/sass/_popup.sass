@@ -12,12 +12,19 @@
     flex: 0 0 auto
     display: flex
     align-items: center
-    justify-content: flex-end
-    padding: 20px 20px 20px 20px
+    justify-content: flex-start
+    padding: 20px 8px 20px 10px
+  .popup-title
+    font-family: 'Open Sans Condensed', sans-serif
+    font-size: 17px
+    line-height: 20px
+    font-weight: 700
+    text-transform: uppercase
   .popup-close
     display: block
     width: 32px
     height: 32px
+    margin-left: auto
     background: #ffffff url(../img/icon/close.png) no-repeat center
     border: none
   .popup-body
@@ -32,6 +39,7 @@
   bottom: 0
   display: none
   background: #e6e6e6
+  z-index: 100
   .sticky-close
     position: absolute
     top: 0

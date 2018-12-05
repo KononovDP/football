@@ -14,7 +14,7 @@
 			display: block
 			width: 36px
 			height: 26px
-			background: #fac919 url(../img/icon/arrow-right.png) no-repeat center
+			background: map-get($colors, main) url(../img/icon/arrow-right.png) no-repeat center
 			border: none 
 			cursor: pointer
 	.overview-text 
@@ -24,16 +24,16 @@
 		width: 100%
 		display: block
 		padding: 14px 20px 14px 21px
-		background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.27) 25%,#000 100%)
+		background: linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.27) 25%,#000000 100%)
 	.overview-title
 		font-size: 17px
 		line-height: 18px
-		color: #ffffff
+		color: map-get($colors, white)
 		span
 			font-size: 12px
 		&:hover
 			text-decoration: underline
-			color: #efae1f
+			color: map-get($colors, main-dark)
 	.overview-info
 		.date
 			color: #99a499
@@ -42,7 +42,7 @@
 	display: flex
 	align-items: flex-start
 	padding: 20px 15px
-	color: #161616
+	color: map-get($colors, grey)
 	.overview_sm-img
 		position: relative
 		flex: 0 0 26%
@@ -56,7 +56,7 @@
 			display: block
 			width: 20px
 			height: 15px
-			background: #fac919 url(../img/icon/arrow-right.png) no-repeat center
+			background: map-get($colors, main) url(../img/icon/arrow-right.png) no-repeat center
 	.overview_sm-text
 		flex: 1 1 100%
 		font-size: 17px

@@ -2,14 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc6e5512-ef5b-4332-9e0c-abb85fdaac97" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/img/post-img.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/sass/_popup.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/resources/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/lib.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/lib.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/_form.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_accordion.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_accordion.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_article.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_article.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_base.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_breadcrumbs.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_breadcrumbs.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_error.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_error.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_fancybox.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_fancybox.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_hotnews.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_hotnews.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_match.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_match.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_nav.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_nav.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_news.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_news.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/_overview.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_overview.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_pagination.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_pagination.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_photo.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_photo.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_popup.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_popup.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_post.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_post.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_section.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_section.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_select.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_select.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/sass/_tab.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_tab.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/sass/main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_table.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_table.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/sass/_vars.sass" beforeDir="false" afterPath="$PROJECT_DIR$/resources/sass/_vars.sass" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,26 +32,32 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/ukraine.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
-            </state>
-          </provider>
-        </entry>
-      </file>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/resources/sass/_tab.sass">
+        <entry file="file://$PROJECT_DIR$/resources/sass/_vars.sass">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="690">
-              <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+            <state>
+              <caret column="176" selection-start-column="176" selection-end-column="176" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>#eee</find>
+      <find>#fac919</find>
+      <find>map-get($colors, main)</find>
+      <find>#efae1f</find>
+      <find>#e6e6e6</find>
+      <find>#161616</find>
+      <find>#a4a4a4</find>
+      <find>#</find>
+    </findStrings>
+    <dirStrings>
+      <dir>$PROJECT_DIR$/resources/sass</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -46,16 +66,34 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/resources/sass/main.sass" />
-        <option value="$PROJECT_DIR$/resources/sass/_overview.sass" />
         <option value="$PROJECT_DIR$/resources/index.html" />
-        <option value="$PROJECT_DIR$/resources/sass/_popup.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_post.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_select.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_section.sass" />
         <option value="$PROJECT_DIR$/resources/sass/_tab.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_photo.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_error.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_accordion.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_pagination.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_breadcrumbs.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_header.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_overview.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_footer.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_popup.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_fancybox.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_article.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_base.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_nav.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_vars.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_match.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_news.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_hotnews.sass" />
+        <option value="$PROJECT_DIR$/resources/sass/_table.sass" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1920" />
-    <option name="y" value="-1" />
+    <option name="x" value="257" />
     <option name="width" value="1680" />
     <option name="height" value="1050" />
   </component>
@@ -64,7 +102,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -87,6 +124,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -123,26 +161,21 @@
       <option name="presentableId" value="Default" />
       <updated>1543497417621</updated>
       <workItem from="1543497418777" duration="2518000" />
+      <workItem from="1544017515307" duration="1602000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2518000" />
+    <option name="totallyTimeSpent" value="4120000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1920" y="-1" width="1680" height="1050" extended-state="6" />
-    <editor active="true" />
+    <frame x="0" y="-1" width="1920" height="1053" extended-state="6" />
     <layout>
-      <window_info id="npm" side_tool="true" />
-      <window_info id="Gulp" side_tool="true" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1866585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16488793" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" visible="true" weight="0.087473005" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Gulp" order="2" side_tool="true" />
+      <window_info id="npm" order="3" side_tool="true" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -150,19 +183,22 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Database" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.087190524" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/resources/sass/_form.sass">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_form.sass" />
     <entry file="file://$PROJECT_DIR$/resources/sass/_popup.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -206,14 +242,56 @@
     <entry file="file://$PROJECT_DIR$/resources/ukraine.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
-          <caret line="15" lean-forward="true" selection-start-line="15" selection-end-line="15" />
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/_tab.sass">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="46" column="25" selection-start-line="46" selection-start-column="25" selection-end-line="46" selection-end-column="25" />
+        <state relative-caret-position="492">
+          <caret line="36" column="44" lean-forward="true" selection-start-line="36" selection-start-column="44" selection-end-line="36" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_base.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="134" column="16" selection-start-line="134" selection-start-column="16" selection-end-line="134" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_breadcrumbs.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_accordion.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="56" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_table.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="204" column="45" selection-start-line="204" selection-start-column="45" selection-end-line="204" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_header.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="274">
+          <caret line="32" column="37" selection-start-line="32" selection-start-column="37" selection-end-line="32" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/sass/_vars.sass">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="176" selection-start-column="176" selection-end-column="176" />
         </state>
       </provider>
     </entry>

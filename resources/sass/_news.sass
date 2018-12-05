@@ -9,7 +9,7 @@
 	display: flex
 	justify-content: flex-start
 	padding: 20px 0 15px
-	border-bottom: 1px solid #e6e6e6
+	border-bottom: 1px solid map-get($colors, grey-lighter)
 	.news-img
 		flex: 0 0 72px
 		margin-right: 20px
@@ -23,11 +23,11 @@
 		display: inline-block
 		margin-top: -3px
 		max-height: 36px
-		color: #161616
+		color: map-get($colors, grey)
 		overflow: hidden 
 		&:hover
 			text-decoration: underline
-			color: #efae1f
+			color: map-get($colors, main-dark)
 	.news-info
 		margin-top: auto
 
@@ -38,16 +38,16 @@
 	font-size: 12px
 	line-height: 20px
 .date
-	color: #c50a1c
+	color: map-get($colors, red)
 .location
 	margin-left: 10px
 	margin-right: auto
-	color: #a4a4a4
+	color: map-get($colors, grey-lightest)
 	transition: all .3s
 	&:hover
-		color: #efae1f
+		color: map-get($colors, main-dark)
 .views
 	display: inline-block
 	padding: 0 0 0 35px
 	background: transparent url(../img/icon/eye.png) no-repeat left 10px center
-	color: #a4a4a4
+	color: map-get($colors, grey-lightest)

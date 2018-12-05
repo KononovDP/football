@@ -1,6 +1,6 @@
 .table
 	margin-bottom: 20px
-	border: 1px solid #e6e6e6
+	border: 1px solid map-get($colors, grey-lighter)
 	.table-header
 		display: flex
 		justify-content: space-between
@@ -24,20 +24,20 @@
 					display: block
 					font-size: 12px
 					line-height: 16px
-					color: #c50a1c
+					color: map-get($colors, red)
 		.table-status
 			font-size: 12px
 			line-height: 20px
 			font-weight: 300
-			color: #a4a4a4
+			color: map-get($colors, grey-lightest)
 			span
-				color: #c50a1c
+				color: map-get($colors, red)
 
 .table-row
 	display: flex
 	min-height: 49px
 	margin-bottom: -1px
-	border-bottom: 1px solid #e6e6e6
+	border-bottom: 1px solid map-get($colors, grey-lighter)
 	&:last-child
 		border-bottom: none
 	.table-col-bonus
@@ -57,7 +57,7 @@
 		.club-position
 			font-size: 12px
 			line-height: 18px
-			color: #a4a4a4
+			color: map-get($colors, grey-lightest)
 		.club-icon
 			flex: 0 0 25px
 			margin: 0 9px 0 13px
@@ -92,7 +92,7 @@
 			content: ''
 			width: 0
 			height: 0
-			border-top: 8px solid #161616
+			border-top: 8px solid map-get($colors, grey)
 			border-left: 8px solid transparent
 			border-right: 8px solid transparent
 .additional
@@ -101,11 +101,11 @@
 
 .table-row_header
 	min-height: 33px
-	background: #eeeeee
+	background: map-get($colors, grey-light)
 	text-align: center
 	font-size: 12px
 	line-height: 33px
-	color: #a4a4a4
+	color: map-get($colors, grey-lightest)
 	.table-col-club
 		padding-left: 15px
 		text-align: left
@@ -177,7 +177,7 @@
 				width: auto
 				min-width: 100px
 				flex-direction: column
-				background: #eeeeee
+				background: map-get($colors, grey-light)
 				visibility: hidden
 				opacity: 0
 				box-shadow: 3px 3px 6px 0 rgba(61,61,61,.15)
@@ -192,7 +192,7 @@
 					content: ''
 					width: 0
 					height: 0
-					border-bottom: 8px solid #eeeeee
+					border-bottom: 8px solid map-get($colors, grey-light)
 					border-left: 8px solid transparent
 					border-right: 8px solid transparent
 				.table-col-data
@@ -202,7 +202,7 @@
 					justify-content: flex-start
 					min-height: 36px
 					line-height: 36px
-					border-bottom: 1px solid #e6e6e6
+					border-bottom: 1px solid map-get($colors, grey-lighter)
 					&:before
 						box-sizing: border-box
 						display: inline-block

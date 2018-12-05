@@ -3,7 +3,7 @@
 	display: none
 .nav-list
 	display: flex
-	background: #313131
+	background: map-get($colors, grey-dark)
 .nav-item
 	position: relative
 	flex-grow: 1
@@ -16,7 +16,7 @@
 		top: 100%
 		display: block
 		min-width: 195px
-		background: #eeeeee
+		background: map-get($colors, grey-light)
 		visibility: hidden
 		opacity: 0
 		transition: all .3s
@@ -25,14 +25,14 @@
 			display: flex
 			align-items: center
 			padding: 6px 16px 8px 16px
-			border-bottom: 1px solid #e6e6e6
+			border-bottom: 1px solid map-get($colors, grey-lighter)
 			color: inherit
 			white-space: nowrap
 			transition: all .3s
 			&:last-child
 				border-bottom: none
 			&:hover
-				background: #fac919
+				background: map-get($colors, main)
 		.nav-child-icon
 			flex: 0 0 25px
 			margin-right: 8px
@@ -47,7 +47,7 @@
 	width: 100%
 	height: 50px
 	padding: 10px 10px 10px 37px
-	background: #313131
+	background: map-get($colors, grey-dark)
 	color: #c3c3c3
 	transition: all .3s
 	&:before
@@ -100,14 +100,14 @@
 @media only screen and (min-width : 768px)
 	.nav-item:hover
 		.nav-link
-			background: #eeeeee
-			color: #161616
+			background: map-get($colors, grey-light)
+			color: map-get($colors, grey)
 			.image
 				opacity: 0
 			.hover-state
 				opacity: 1
 		.nav-link_home
-			background: #fac919
+			background: map-get($colors, main)
 		.nav-child
 			opacity: 1
 			visibility: visible
@@ -120,7 +120,7 @@
 		width: 100%
 		height: 100%
 		display: none
-		background: #ffffff
+		background: map-get($colors, white)
 		z-index: 110
 		&.visible
 			display: flex
@@ -128,7 +128,7 @@
 		.header-mobile 
 			display: block
 			padding: 16px 55px 11px 15px
-			border-bottom: 1px solid #eeeeee
+			border-bottom: 1px solid map-get($colors, grey-light)
 			button
 				display: none
 				background-color: transparent
@@ -142,13 +142,13 @@
 			overflow: auto
 	.nav-list
 		flex-direction: column
-		background: #ffffff
+		background: map-get($colors, white)
 	.nav-item
 		width: 100%
 		margin-top: -1px
 		&:hover .nav-link 
-			background: #fac919
-			border-color: #fac919
+			background: map-get($colors, main)
+			border-color: map-get($colors, main)
 			z-index: 10
 	.nav-item_parent
 		&:after
@@ -165,11 +165,11 @@
 		justify-content: flex-start
 		height: 48px
 		padding: 0 40px 0 15px
-		background: #ffffff
-		border-top: 1px solid #eeeeee
-		border-bottom: 1px solid #eeeeee
+		background: map-get($colors, white)
+		border-top: 1px solid map-get($colors, grey-light)
+		border-bottom: 1px solid map-get($colors, grey-light)
 		text-align: left
-		color: #161616
+		color: map-get($colors, grey)
 
 	.nav-link-icon
 		display: inline-block
@@ -193,10 +193,10 @@
 			height: 48px
 			margin-top: -1px
 			padding: 5px 15px
-			border-top: 1px solid #eeeeee
-			border-bottom: 1px solid #eeeeee
+			border-top: 1px solid map-get($colors, grey-light)
+			border-bottom: 1px solid map-get($colors, grey-light)
 			&:hover
-				border-color: #fac919
+				border-color: map-get($colors, main)
 				z-index: 10
 	.nav-item
 		.nav-child_active
@@ -206,7 +206,7 @@
 			display: block
 			width: 100%
 			bottom: 0
-			background: #ffffff
+			background: map-get($colors, white)
 			z-index: 130
 			opacity: 1
 			visibility: visible

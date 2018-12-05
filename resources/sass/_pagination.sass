@@ -15,7 +15,7 @@
 		text-align: center
 		font-size: 15px
 		line-height: 32px
-		color: #161616
+		color: map-get($colors, grey)
 		transition: all .3s
 		&.prev
 			position: relative
@@ -28,7 +28,7 @@
 				content: ''
 				width: 0
 				height: 0
-				border-right: 8px solid #a4a4a4
+				border-right: 8px solid map-get($colors, grey-lightest)
 				border-top: 8px solid transparent
 				border-bottom: 8px solid transparent
 		&.next
@@ -42,24 +42,24 @@
 				content: ''
 				width: 0
 				height: 0
-				border-left: 8px solid #a4a4a4
+				border-left: 8px solid map-get($colors, grey-lightest)
 				border-top: 8px solid transparent
 				border-bottom: 8px solid transparent
 		&.current
-			background-color: #fac919
+			background-color: map-get($colors, main)
 			&:hover
-				color: #161616
+				color: map-get($colors, grey)
 				cursor: default
 				pointer-events: none
 		&:hover
-			color: #efae1f
+			color: map-get($colors, main-dark)
 		&.dots
 			cursor: default
 			&:hover
-				color: #161616
+				color: map-get($colors, grey)
 
 	.page-numbers.prev:hover:before
-		border-right-color: #efae1f
+		border-right-color: map-get($colors, main-dark)
 	.page-numbers.next:hover:before
-		border-left-color: #efae1f
+		border-left-color: map-get($colors, main-dark)
 

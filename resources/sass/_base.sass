@@ -4,7 +4,7 @@
 
 body
 	font: 15px/18px 'Roboto', sans-serif
-	color: #161616
+	color: map-get($colors, grey)
 	//font-family: 'Open Sans Condensed', sans-serif;
 
 h1
@@ -68,7 +68,7 @@ a
 
 .coloured
 	padding: 0 3px
-	background: #fac919
+	background: map-get($colors, main)
 	color: inherit
 
 /*for-img*/
@@ -132,15 +132,15 @@ img
 	min-width: 128px
 	padding: 7px 10px 8px 10px
 	text-align: center
-	background: #fac919
+	background: map-get($colors, main)
 	border: none
 	font-size: 13px
 	line-height: 18px
-	color: #313131
+	color: map-get($colors, grey-dark)
 	cursor: pointer
 	transition: all .3s
 	&:hover
-		background: #efae1f
+		background: map-get($colors, main-dark)
 
 /*MAIN*/
 body
@@ -156,7 +156,7 @@ body
 	width: 100%
 	max-width: 1130px
 	margin: 0 auto
-	background: #ffffff
+	background: map-get($colors, white)
 
 .container
 	width: 100%
@@ -172,7 +172,7 @@ body
 		//flex: 1 1 70%
 		width: 70%
 		padding-top: 25px
-		border-right: 1px solid #e6e6e6 
+		border-right: 1px solid map-get($colors, grey-lighter)
 	.main_xl
 		width: 100%
 		padding: 100px 0

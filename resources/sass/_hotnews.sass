@@ -3,20 +3,20 @@
 	display: flex
 	align-items: flex-start
 	padding: 15px 0
-	border-bottom: 1px solid #e6e6e6
+	border-bottom: 1px solid map-get($colors, grey-lighter)
 	.hot-news-date
 		flex: 0 0 60px
 		font-size: 12px
 		line-height: 20px
-		color: #a4a4a4
+		color: map-get($colors, grey-lightest)
 	.hot-news-time
-		color: #c50a1c
+		color: map-get($colors, red)
 	.hot-news-title
 		flex: 1 1 100%
-		color: #161616
+		color: map-get($colors, grey)
 		&:hover
 			text-decoration: underline
-			color: #efae1f
+			color: map-get($colors, main-dark)
 .hot-news-action
 	margin: 20px 0
 	text-align: center

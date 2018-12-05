@@ -1,6 +1,6 @@
 /*FOOTER*/
 .footer
-	background: #313131
+	background: map-get($colors, grey-dark)
 .footer-top
 	padding: 20px 0 13px
 .footer-top-inner
@@ -17,10 +17,10 @@
 	font-size: 17px
 	line-height: 22px
 	text-transform: uppercase
-	color: #ffffff
+	color: map-get($colors, white)
 	transition: all .3s
 	&:hover
-		color: #fac919
+		color: map-get($colors, main)
 .footer-nav
 	display: flex
 	flex-direction: column
@@ -28,10 +28,10 @@
 .footer-nav-link
 	font-size: 14px
 	line-height: 24px
-	color: #a4a4a4
+	color: map-get($colors, grey-lightest)
 	transition: all .3s
 	&:hover
-		color: #fac919
+		color: map-get($colors, main)
 .footer-bottom
 	padding-bottom: 25px
 .footer-bottom-inner
@@ -40,7 +40,7 @@
 	align-items: flex-end
 	font-size: 15px
 	line-height: 15px
-	color: #ffffff
+	color: map-get($colors, white)
 	a
 		color: inherit
 .footer-logo

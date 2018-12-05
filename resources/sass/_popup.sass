@@ -6,7 +6,7 @@
   right: 0
   display: none
   flex-direction: column
-  background: #ffffff
+  background: map-get($colors, white)
   z-index: 110
   .popup-header
     flex: 0 0 auto
@@ -25,11 +25,11 @@
     width: 32px
     height: 32px
     margin-left: auto
-    background: #ffffff url(../img/icon/close.png) no-repeat center
+    background: map-get($colors, white) url(../img/icon/close.png) no-repeat center
     border: none
   .popup-body
     flex: 0 1 100%
-    background: #ffffff
+    background: map-get($colors, white)
     overflow-y: auto
 
 .sticky
@@ -38,7 +38,7 @@
   right: 0
   bottom: 0
   display: none
-  background: #e6e6e6
+  background: map-get($colors, grey-lighter)
   z-index: 100
   .sticky-close
     position: absolute
@@ -48,7 +48,7 @@
     display: block
     width: 32px
     height: 32px
-    background: #fac919 url(../img/icon/close.png) no-repeat center
+    background: map-get($colors, main) url(../img/icon/close.png) no-repeat center
     border: none
 
 

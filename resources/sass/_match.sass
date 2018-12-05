@@ -7,13 +7,13 @@
 	font-size: 15px
 	line-height: 20px
 	font-weight: 500
-	color: #161616
+	color: map-get($colors, grey)
 .match-header
 	display: flex
 	justify-content: flex-start
 	align-items: center
 	padding: 5px 20px
-	background: #eeeeee
+	background: map-get($colors, grey-light)
 	.championship-icon
 		flex: 0 0 66px
 		width: 66px
@@ -23,18 +23,18 @@
 		font-size: 12px
 		line-height: 18px
 		font-weight: 300
-		color: #c50a1c
+		color: map-get($colors, red)
 .match-header_center
 	justify-content: center
 .match-body
-	border: 1px solid #e6e6e6
+	border: 1px solid map-get($colors, grey-lighter)
 	border-top: none
 .match
 	display: flex
 	align-items: center
 	justify-content: center
 	min-height: 48px
-	border-bottom: 1px solid #e6e6e6
+	border-bottom: 1px solid map-get($colors, grey-lighter)
 	&:last-child
 		border-bottom: none
 	.match-date,
@@ -44,7 +44,7 @@
 	.match-date
 		font-size: 12px
 		line-height: 20px
-		color: #c50a1c
+		color: map-get($colors, red)
 	.match-info
 		flex: 1 1 100%
 		display: flex
@@ -90,7 +90,7 @@
 		top: 0
 		height: 100%
 		width: 30px
-		background: #313131
+		background: map-get($colors, grey-dark)
 		cursor: pointer
 		&:before
 			position: absolute
@@ -107,22 +107,22 @@
 	.slick-prev
 		left: 0
 		&:before
-			border-right: 8px solid #a4a4a4
+			border-right: 8px solid map-get($colors, grey-lightest)
 	.slick-next
 		right: 0
 		&:before
-			border-left: 8px solid #a4a4a4
+			border-left: 8px solid map-get($colors, grey-lightest)
 	.slick-prev:hover:before
-		border-right: 8px solid #fac919
+		border-right: 8px solid map-get($colors, main)
 	.slick-next:hover:before
-		border-left: 8px solid #fac919
+		border-left: 8px solid map-get($colors, main)
 
 	.match-slider-link
 		display: flex
 		align-items: center
 		height: 36px
 		padding: 6px 16px 7px 16px
-		background: #313131
+		background: map-get($colors, grey-dark)
 		border-right: 1px solid rgba(255, 255, 255, .15)
 		font-size: 12px
 		line-height: 20px
@@ -146,8 +146,8 @@
 				left: 0
 				opacity: 0
 	.match-slider-link.active
-		background: #fac919
-		color: #161616	
+		background: map-get($colors, main)
+		color: map-get($colors, grey)
 		.match-slider-icon
 			.image
 				opacity: 0
@@ -156,8 +156,8 @@
 
 	.slick-active
 		.match-slider-link
-			background: #fac919
-			color: #161616
+			background: map-get($colors, main)
+			color: map-get($colors, grey)
 			.match-slider-icon
 				.image
 					opacity: 0
@@ -167,8 +167,8 @@
 @media only screen and (min-width : 768px)
 	.match-slider
 		.match-slider-link:hover
-			background: #fac919
-			color: #161616	
+			background: map-get($colors, main)
+			color: map-get($colors, grey)
 			.match-slider-icon
 				.image
 					opacity: 0
@@ -192,7 +192,7 @@
 			justify-content: center
 			align-items: center
 			padding: 14px 5px
-			border-right: 1px solid #eeeeee
+			border-right: 1px solid map-get($colors, grey-light)
 		.match-info
 			flex-wrap: wrap
 		.match-member
@@ -201,7 +201,7 @@
 			align-items: stretch
 			width: 100%
 			padding: 0 0 0 18px
-			border-bottom: 1px solid #eeeeee
+			border-bottom: 1px solid map-get($colors, grey-light)
 			&:last-child
 				border-bottom: none
 		.match-member_first
@@ -224,7 +224,7 @@
 			justify-content: center
 			align-items: center
 			text-align: center
-			border-left: 1px solid #eeeeee
+			border-left: 1px solid map-get($colors, grey-light)
 		.match-member_first 
 			text-align: left
 			.match-member-icon 
@@ -258,7 +258,7 @@
 			align-items: center
 			height: 112px
 			margin: 0 -15px
-			background: #161616 url(../img/select-day-bg.jpg) no-repeat center
+			background: map-get($colors, grey) url(../img/select-day-bg.jpg) no-repeat center
 			background-size: cover 
 			overflow-x: auto
 			.calendar-option_selected
@@ -275,12 +275,12 @@
 					background-color: transparent
 					text-align: center
 					font-weight: 300
-					color: #fff
+					color: map-get($colors, white)
 					transition: all .3s
 				.calendar-option_active
 					display: inline-block
 					padding: 0 3px
-					background: #fac919
+					background: map-get($colors, main)
 					font-family: 'Open Sans Condensed', sans-serif
 					font-size: 17px
 					line-height: 22px

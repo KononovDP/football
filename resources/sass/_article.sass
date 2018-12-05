@@ -3,7 +3,7 @@
 	display: flex
 	justify-content: flex-start
 	padding: 20px 0
-	border-bottom: 1px solid #e6e6e6
+	border-bottom: 1px solid map-get($colors, grey-lighter)
 	.article-img
 		flex: 0 0 130px
 		margin-right: 20px
@@ -20,11 +20,11 @@
 		font-size: 17px
 		line-height: 20px
 		font-weight: 500
-		color: #161616
+		color: map-get($colors, grey)
 		overflow: hidden
 		&:hover
 			text-decoration: underline
-			color: #efae1f
+			color: map-get($colors, main-dark)
 	.article-info
 		margin-top: auto
 		.date, .views
@@ -58,4 +58,4 @@
 		.article-title 
 			margin-top: 0
 			margin-bottom: 5px
-			color: #ffffff
+			color: map-get($colors, white)

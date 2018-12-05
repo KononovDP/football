@@ -3,7 +3,7 @@
 		display: block
 		width: 100%
 		margin-bottom: 20px
-		border: 1px solid #e6e6e6
+		border: 1px solid map-get($colors, grey-lighter)
 	.accordion-header
 		display: flex
 		align-items: center
@@ -38,7 +38,7 @@
 			display: inline-block
 			width: 0
 			height: 0
-			border-top: 8px solid #a4a4a4
+			border-top: 8px solid map-get($colors, grey-lightest)
 			border-left: 8px solid transparent
 			border-right: 8px solid transparent
 			transition: all .3s
@@ -47,7 +47,7 @@
 
 
 	.accordion-item.active
-		border-color: #fac919
+		border-color: map-get($colors, main)
 		.accordion-header-arrow
 			span
 				transform: rotateX(180deg)

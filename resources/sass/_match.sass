@@ -145,7 +145,6 @@
 				top: 0
 				left: 0
 				opacity: 0
-	.match-slider-link:hover,
 	.match-slider-link.active
 		background: #fac919
 		color: #161616	
@@ -153,12 +152,23 @@
 			.image
 				opacity: 0
 			.image.hover
-				opacity: 1	
+				opacity: 1
 
 	.slick-active
 		.match-slider-link
 			background: #fac919
 			color: #161616
+			.match-slider-icon
+				.image
+					opacity: 0
+				.image.hover
+					opacity: 1
+
+@media only screen and (min-width : 768px)
+	.match-slider
+		.match-slider-link:hover
+			background: #fac919
+			color: #161616	
 			.match-slider-icon
 				.image
 					opacity: 0
